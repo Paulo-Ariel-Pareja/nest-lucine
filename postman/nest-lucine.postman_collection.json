@@ -1,0 +1,77 @@
+{
+	"info": {
+		"_postman_id": "01723b37-af75-44b7-ab87-7bb8289a582c",
+		"name": "nest-lucine",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "6118536"
+	},
+	"item": [
+		{
+			"name": "Get by title",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:3000/movie/title?name=tomb raider",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"movie",
+						"title"
+					],
+					"query": [
+						{
+							"key": "name",
+							"value": "tomb raider"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get with full text search",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:3000/movie?search=tomb raider",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"movie"
+					],
+					"query": [
+						{
+							"key": "search",
+							"value": "tomb raider"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Healthcheck",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:3000/healthcheck",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"healthcheck"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
